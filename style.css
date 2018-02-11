@@ -1,10 +1,10 @@
 /* overrides */
 
 body {
-    margin: 0;
-    padding: 0;
+
     font-family: 'Raleway', sans-serif;
     background-color: black;
+    
 }
 
 h1 {
@@ -13,21 +13,33 @@ h1 {
 
 .wrapper {
     font-size: 20pt;
-    background: transparent;
-
+    
+    
 
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16;
+  
 }
 
 
 #about, #projects, #contact{
-   
+   margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 20;
 }
 
+.topbar{
+
+    margin-left: -25;
+    margin-right: -25;
+    
+}
+.navbar-inner{
+    padding: 100;
+}
 .color1 {
     
     background-color: darkslategrey;
@@ -36,6 +48,10 @@ p {
 
 .parallax-window {
     min-height: 400px;
-    
+    background: transparent;
+    background-repeat: repeat;
+    margin: 0;
+}
 
+.marZero {
 }
