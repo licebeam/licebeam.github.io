@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: black;
 }
 
 h1 {
@@ -12,6 +13,8 @@ h1 {
 
 .wrapper {
     font-size: 20pt;
+    background: transparent;
+
 
 }
 
@@ -20,10 +23,19 @@ p {
     font-size: 16;
 }
 
-.image1 {
-    height: 400px;
-}
 
 #about, #projects, #contact{
-    background-color: aliceblue;
+   
+}
+
+.color1 {
+    
+    background-color: darkslategrey;
+    color:aliceblue;
+}
+
+.parallax-window {
+    min-height: 400px;
+    
+
 }
