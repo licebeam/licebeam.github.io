@@ -1,9 +1,29 @@
+/* overrides */
+
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    font-size: 20pt;
 
 }
 
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16;
+}
 
-.wrapper {
-    font-family: monospace;
-    font-size: 20pt;
+.image1 {
+    height: 400px;
+}
+
+#about, #projects, #contact{
+    background-color: aliceblue;
 }
