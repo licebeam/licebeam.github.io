@@ -4,7 +4,7 @@ body {
 
     font-family: 'Raleway', sans-serif;
     background-color: black;
-    
+
 }
 
 h1 {
@@ -13,45 +13,53 @@ h1 {
 
 .wrapper {
     font-size: 20pt;
-    
-    
-
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16;
-  
+
 }
 
 
-#about, #projects, #contact{
-   margin-bottom: 40px;
-    margin-top: 40px;
-    padding: 20;
-}
-
-.topbar{
-
-    margin-left: -25;
-    margin-right: -25;
-    
-}
-.navbar-inner{
+#about,
+#projects,
+#contact {
+    margin-bottom: 100px;
+    margin-top: 100px;
     padding: 100;
 }
+
+.topbar {
+    font-size: 20;
+    margin: 0 -20 0 -20;
+}
+
+ul {
+    margin: 10;
+}
+
 .color1 {
-    
-    background-color: darkslategrey;
-    color:aliceblue;
+
+    background-color: 231F20;
+    color: aliceblue;
 }
 
 .parallax-window {
-    min-height: 400px;
     background: transparent;
-    background-repeat: repeat;
-    margin: 0;
+    min-height: 100px;
+}
+
+.myForm {
+    padding-top: 40;
+    padding-left: 100;
+    padding-right: 100;
 }
 
 .marZero {
+    margin: 0;
+}
+
+
+parWrap {
 }
