@@ -1,10 +1,12 @@
 /* overrides */
-html, body{
+
+html,
+body {
     height: 100%;
 }
 
 body {
-    
+
     font-family: 'Raleway', sans-serif;
     background-color: black;
 
@@ -15,39 +17,52 @@ h1 {
 }
 
 .wrapper {
-    font-size: 20pt;
     margin: 0;
 }
+
 .wrap2 {
     max-width: 1000px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16;
 
 }
 
-.jumbotron {
-    background-color: transparent !important;
+.titleText > h1{
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    font-size: 60pt;
+
+}
+.titleText > p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 12pt;
 }
 
-#about,
-#projects,
-#contact {
+#about {
     margin-bottom: 100px;
     margin-top: 100px;
     padding: 10;
+    width: 500px;
 }
-#projects{
-    height: 800px;
+
+#projects {
+    margin-top: 20;
+    height: 720px;
+}
+
+#contact {
+    padding-bottom: 10;
 }
 
 .topbar {
     font-size: 20;
-    margin: 0 -20 0 -20;
    
+
 }
 
 ul {
@@ -56,8 +71,8 @@ ul {
 
 .color1 {
 
-    background-color: 231F20;
-    color: aliceblue;
+    background-color: white;
+
 }
 
 .parallax-window {
@@ -68,8 +83,15 @@ ul {
 .carousel {
     max-height: 400px;
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 .carousel-inner img {
-  margin: auto;
+    margin: auto;
+}
+
+footer {
+    background-color: F71735;
+    margin-top: -20;
+    height: 100px;
 }
