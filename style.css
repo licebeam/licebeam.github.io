@@ -9,6 +9,8 @@ body {
 body {
     font-family: 'Raleway', sans-serif;
     background-color: black;
+    background-image: url(images/bg1.png);
+    background-repeat: repeat;
 }
 
 h1 {
@@ -22,9 +24,36 @@ p {
 }
 
 @media only screen and (min-width: 500px) {
+
+    nav {
+        width: 100%;
+    }
+   /* change the background color */
+    
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-custom {
+    background-color: F71735;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link , .navbar-toggler{
+    color: #ffffff;
+}
     /* Media Query Laptop */
     .titleText {
         height: 600px;
+        width: 100%;
     }
 
     .titleText > h1 {
@@ -71,16 +100,12 @@ p {
         height: 100px;
         padding: 25;
         margin-top: -16;
+        width: 100%;
     }
 
 }
 
 
-.parallax-window {
-    background: transparent;
-    min-height: 400px;
-    max-width: 100%;
-}
 
 .carousel {
     max-width: 800px;
@@ -136,6 +161,7 @@ p {
         height: 100px;
         padding: 25;
         margin-top: -16;
+        width: 100%;
     }
 
 }
