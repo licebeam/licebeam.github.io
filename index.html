@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="modules/bootstrap.min.css">
     <link rel="stylesheet" href="modules/animate.css">
     <script src="modules/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,900" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -138,10 +138,10 @@
 
             <footer>
                 <h1>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                    <a href=""><i class="fab fa-codepen"></i></a>
+                    <a href="" class="ani2"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="ani2"><i class="fab fa-github"></i></a>
+                    <a href="" class="ani2"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="ani2"><i class="fab fa-codepen"></i></a>
                 </h1>
 
             </footer>
@@ -160,7 +160,13 @@
 <!-- JQuery ahoy!-->
 <script>
     $(document).ready(function() {
-        $(".ani").addClass("animated fadeIn");
+        $(".ani").addClass("animated pulse");
+
+        $(".ani2").hover(function() {
+            $(this).addClass("animated flash");
+        }, function() {
+            $(this).removeClass("animated flash");
+        });
 
         $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
@@ -170,6 +176,7 @@
             }, 500);
         });
     });
+
 </script>
 
 

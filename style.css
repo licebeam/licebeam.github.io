@@ -15,12 +15,17 @@ body {
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    line-height: .98;
+    letter-spacing: 2pt;
 }
 
 
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16;
+    letter-spacing: 4pt;
+     line-height: 2;
 }
 
 
@@ -63,8 +68,17 @@ nav {
 
 h1 > a {
     padding: 10px;
+    color: black;
 }
-
+a:link{
+    color: null;
+}
+a:visited{
+    color: null;
+}
+a:hover{
+    color: white;
+}
 @media only screen and (min-width: 800px) {
     /* Media Query Laptop */
     body {
@@ -165,18 +179,21 @@ h1 > a {
 
 
     #about {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
     }
 
     #projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
     }
 
     #contact {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
     }
     myFormDiv {
         padding: 10 10 10 10;
@@ -189,6 +206,9 @@ h1 > a {
         padding: 25;
         margin-top: -16;
         width: 100%;
+    }
+    h1{
+        font-size: 19pt;
     }
 
 }
