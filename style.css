@@ -21,10 +21,14 @@ p {
     font-size: 16;
 }
 
+.titleText{
+    height: 800px;
+}
 .titleText > h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-size: 60pt;
+    padding-top: 100;
 }
 
 .titleText > p {
@@ -34,28 +38,25 @@ p {
 }
 
 #about {
-    margin-bottom: 100px;
-    margin-top: 100px;
+    height: 400;
 }
 
 #projects {
-    margin-top: 20;
-    height: 700;
+ 
 }
 
 #contact {
-    padding-bottom: 10;
+    height: 400;
 }
 
 
 ul {
-    margin: 10;
-    margin: 0 auto;
+
 }
 
 .color1 { /* this is a container div */
     background-color: white;
-    padding: 10;
+    padding: 0 100 0 100;
     margin: 0 auto;
 }
 
@@ -66,7 +67,7 @@ ul {
 }
 
 .carousel {
-    max-height: 400px;
+    max-height: 400px inherit;
     max-width: 800px;
     margin: 0 auto;
 
