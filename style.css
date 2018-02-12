@@ -22,7 +22,7 @@ p {
 }
 
 .titleText {
-    height: 800px;
+    height: 600px;
 }
 
 .titleText > h1 {
@@ -41,7 +41,6 @@ p {
 .color1 {
     /* this is a container div */
     background-color: white;
-    padding: 0 100 0 100;
     margin: 0 auto;
 }
 
