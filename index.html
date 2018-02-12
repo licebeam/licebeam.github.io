@@ -37,14 +37,14 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <a class="navbar-brand" href="#">Image</a>
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
 
 
             <div class="text-center titleText">
-                <h1 class="ani">Dustin Walker</h1>
+                <h1 class="ani">Dusty Tokyo</h1>
 
                 <p>Front-end web developer on training wheels.</p>
             </div>
@@ -67,7 +67,7 @@
 
             <div class="color1 " id="about">
                 <h1>About Me</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus ligula eget quam pharetra venenatis. Ut quis turpis vel lacus sollicitudin porta. Curabitur mattis dui nec semper viverra. Nulla mi ligula, laoreet ac finibus vitae, bibendum sagittis metus. Suspendisse dictum fringilla lorem vitae aliquet. Aenean quis nisi a lacus viverra dictum. Maecenas accumsan tortor augue, nec porta neque consequat sed. Maecenas pharetra gravida elementum. Nulla facilisi.
+                <p> Front-End Web Developer and Designer in Training. Currently residing in the metropolis of Tokyo.
                 </p>
 
                 <h1>
@@ -84,7 +84,9 @@
             <div class="color1" id="projects">
 
                 <h1>Projects</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus ligula eget quam pharetra venenatis. Ut quis turpis vel lacus sollicitudin porta. Curabitur mattis dui nec semper viverra. Nulla mi ligula, laoreet ac finibus vitae, bibendum sagittis metus. Suspendisse dictum fringilla lorem vitae aliquet. Aenean quis nisi a lacus viverra dictum. Maecenas accumsan tortor augue, nec porta neque consequat sed. Maecenas pharetra gravida elementum. Nulla facilisi.</p>
+                <p> Front-End Web Developer and Designer in Training. Currently residing in the metropolis of Tokyo.
+                </p>
+                </p>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -116,31 +118,30 @@
             <div class="color1" id="contact">
 
                 <h1>Contact</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus ligula eget quam pharetra venenatis. Ut quis turpis vel lacus sollicitudin porta. Curabitur mattis dui nec semper viverra. Nulla mi ligula, laoreet ac finibus vitae, bibendum sagittis metus. Suspendisse dictum fringilla lorem vitae aliquet. Aenean quis nisi a lacus viverra dictum. Maecenas accumsan tortor augue, nec porta neque consequat sed. Maecenas pharetra gravida elementum. Nulla facilisi.</p>
-
-                <form class=myForm>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">Text Message Thing</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Message</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-
-
-
+                <p> Front-End Web Developer and Designer in Training. Currently residing in the metropolis of Tokyo.
+                </p>
+                <div class="myFormDiv">
+                    <form class="myForm">
+                        <div class="form-group col-sm">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">Text Message Thing</small>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="exampleInputPassword1">Message</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
-            <footer class="">
+
+            <footer>
                 <h1>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-codepen"></i>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-codepen"></i></a>
                 </h1>
 
             </footer>
@@ -160,8 +161,15 @@
 <script>
     $(document).ready(function() {
         $(".ani").addClass("animated fadeIn");
-    });
 
+        $(document).on('click', 'a[href^="#"]', function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    });
 </script>
 
 

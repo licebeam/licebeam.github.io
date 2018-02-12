@@ -1,7 +1,6 @@
 /* overrides */
 
-html,
-body {
+html {
     height: 100%;
     width: 100%;
 }
@@ -11,6 +10,7 @@ body {
     background-color: black;
     background-image: url(images/bg1.png);
     background-repeat: repeat;
+
 }
 
 h1 {
@@ -23,36 +23,58 @@ p {
     font-size: 16;
 }
 
-@media only screen and (min-width: 500px) {
 
-    nav {
-        width: 100%;
-    }
-   /* change the background color */
-    
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+nav {
+    width: 100%;
 }
+
+
+/* change the background color */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .navbar-custom {
     background-color: F71735;
 }
+
 /* change the brand and text color */
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
+
 /* change the link color */
+
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
+
 /* change the color of active or hovered links */
+
 .navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link , .navbar-toggler{
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-toggler {
     color: #ffffff;
 }
+
+h1 > a {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 800px) {
     /* Media Query Laptop */
+    body {
+        margin: 0 100 20 100;
+    }
+
+
+
     .titleText {
-        height: 600px;
+
         width: 100%;
     }
 
@@ -60,7 +82,7 @@ p {
         font-family: 'Source Sans Pro', sans-serif;
         color: white;
         font-size: 60pt;
-        padding-top: 100;
+
     }
 
     .titleText > p {
@@ -75,6 +97,7 @@ p {
         background-color: white;
         margin: 0 auto;
         padding: 0 120 0 120;
+        width: 100%;
     }
 
 
@@ -84,7 +107,6 @@ p {
     }
 
     #projects {
-        margin-bottom: 100px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -93,7 +115,10 @@ p {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
+    myFormDiv {
+        padding: 10 10 10 10;
+        background-color: blue;
+    }
 
     footer {
         background-color: F71735;
@@ -113,10 +138,10 @@ p {
 
 }
 
-@media only screen and (min-width: 30px) and (max-width: 500px) {
+@media only screen and (min-width: 30px) and (max-width: 800px) {
     /* Media Query Mobile */
     .titleText {
-        height: 300px;
+        width: 100%;
     }
 
     .titleText > h1 {
@@ -145,7 +170,6 @@ p {
     }
 
     #projects {
-        margin-bottom: 100px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -154,7 +178,10 @@ p {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
+    myFormDiv {
+        padding: 10 10 10 10;
+        background-color: blue;
+    }
 
     footer {
         background-color: F71735;
@@ -165,3 +192,4 @@ p {
     }
 
 }
+
