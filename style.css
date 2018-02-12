@@ -50,11 +50,13 @@ p {
 
 ul {
     margin: 10;
+    margin: 0 auto;
 }
 
 .color1 { /* this is a container div */
     background-color: white;
     padding: 10;
+    margin: 0 auto;
 }
 
 .parallax-window {
@@ -73,5 +75,6 @@ ul {
 footer {
     background-color: F71735;
     margin-top: -20;
+    margin: 0 auto;
     height: 100px;
 }
