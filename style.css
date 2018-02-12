@@ -21,23 +21,24 @@ p {
     font-size: 16;
 }
 
-@media only screen and (min-width : 500px) { /* Media Query Laptop */
-.titleText {
-    height: 600px;
-}
+@media only screen and (min-width: 500px) {
+    /* Media Query Laptop */
+    .titleText {
+        height: 600px;
+    }
 
-.titleText > h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    font-size: 60pt;
-    padding-top: 100;
-}
+    .titleText > h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-size: 60pt;
+        padding-top: 100;
+    }
 
-.titleText > p {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 12pt;
-}
+    .titleText > p {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 12pt;
+    }
 
 
     .color1 {
@@ -48,29 +49,29 @@ p {
     }
 
 
-#about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-#projects {
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #projects {
+        margin-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-#contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
 
-footer {
-    background-color: F71735;
-    height: 100px;
-    padding: 25;
-    margin-top: -16;
-}
+    footer {
+        background-color: F71735;
+        height: 100px;
+        padding: 25;
+        margin-top: -16;
+    }
 
 }
 
@@ -87,23 +88,23 @@ footer {
 
 }
 
-@media only screen and (min-width : 30px) and (max-width: 500px) { /* Media Query Mobile */
-    
+@media only screen and (min-width: 30px) and (max-width: 500px) {
+    /* Media Query Mobile */
     .titleText {
-    height: 300px;
-}
-    
-    .titleText > h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    font-size: 60pt;
-}
+        height: 300px;
+    }
 
-.titleText > p {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 12pt;
-}
+    .titleText > h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-size: 60pt;
+    }
+
+    .titleText > p {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 12pt;
+    }
 
     .color1 {
         /* this is a container div */
@@ -113,28 +114,28 @@ footer {
     }
 
 
-#about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-#projects {
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #projects {
+        margin-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-#contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
 
-footer {
-    background-color: F71735;
-    height: 100px;
-    padding: 25;
-    margin-top: -16;
-}
+    footer {
+        background-color: F71735;
+        height: 100px;
+        padding: 25;
+        margin-top: -16;
+    }
 
 }
