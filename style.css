@@ -21,6 +21,7 @@ p {
     font-size: 16;
 }
 
+@media only screen and (min-width : 500px) { /* Media Query Laptop */
 .titleText {
     height: 600px;
 }
@@ -38,11 +39,14 @@ p {
     font-size: 12pt;
 }
 
-.color1 {
-    /* this is a container div */
-    background-color: white;
-    margin: 0 auto;
-}
+
+    .color1 {
+        /* this is a container div */
+        background-color: white;
+        margin: 0 auto;
+        padding: 0 120 0 120;
+    }
+
 
 #about {
     padding-top: 50px;
@@ -68,7 +72,7 @@ footer {
     margin-top: -16;
 }
 
-
+}
 
 
 .parallax-window {
@@ -78,18 +82,59 @@ footer {
 }
 
 .carousel {
-    max-height: auto;
     max-width: 800px;
     margin: 0 auto;
 
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-
+@media only screen and (min-width : 30px) and (max-width: 500px) { /* Media Query Mobile */
+    
     .titleText {
-        .titleText {
-            height: 200px;
-        }
+    height: 300px;
+}
+    
+    .titleText > h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 60pt;
+}
 
+.titleText > p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 12pt;
+}
+
+    .color1 {
+        /* this is a container div */
+        background-color: white;
+        margin: 0 auto;
+        padding: 0 0 0 0;
     }
+
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#projects {
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+footer {
+    background-color: F71735;
+    height: 100px;
+    padding: 25;
+    margin-top: -16;
+}
+
 }
