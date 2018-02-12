@@ -31,16 +31,16 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">Image</a>
+                    <a class="navbar-brand" href="#"><i class="far fa-folder"></i></a>
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#about">ABOUT_</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#projects">PROJECTS_</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact">CONTACT_</a>
                         </li>
                     </ul>
                 </div>
@@ -66,13 +66,12 @@
                 <p> Front-End Web Developer and Designer in Training. Currently residing in the metropolis of Tokyo.
                 </p>
 
-                <h1>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-node-js"></i>
-
-                    <i class="fas fa-code"></i>
+                <h1 class="">
+                    <span class="iconSkill"><i class="fab fa-css3-alt"></i></span>
+                    <span class="iconSkill"><i class="fab fa-html5"></i></span>
+                    <span class="iconSkill"><i class="fab fa-js"></i></span>
+                    <span class="iconSkill"> <i class="fab fa-node-js"></i></span>
+                    <span class="iconSkill"><i class="fas fa-code"></i></span>
                 </h1>
 
 
@@ -157,6 +156,17 @@
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
+        });
+
+
+        //testing a parallax by dave rupert
+        const title = document.querySelector('h1');
+        const speed = 0.1;
+
+        title.style.transform = 'translateY( calc( var(--scrollparallax) * 1px ) )';
+
+        window.addEventListener('scroll', function() {
+            title.style.setProperty('--scrollparallax', (document.body.scrollTop || document.documentElement.scrollTop) * speed);
         });
     });
 

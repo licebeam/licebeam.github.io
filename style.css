@@ -25,7 +25,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 16;
     letter-spacing: 4pt;
-     line-height: 2;
+    line-height: 2;
 }
 
 
@@ -38,18 +38,21 @@ nav {
 /* change the background color */
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-custom {
     background-color: F71735;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 40;
+    letter-spacing: 2pt;
 }
 
 /* change the brand and text color */
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 1);
 }
 
 /* change the link color */
@@ -67,17 +70,25 @@ nav {
 }
 
 h1 > a {
-    padding: 10px;
+    padding: 8px;
     color: black;
 }
-a:link{
+
+a:link {
     color: null;
 }
-a:visited{
+
+a:visited {
     color: null;
 }
-a:hover{
+
+a:hover {
     color: white;
+}
+
+.iconSkill{
+    color: F71735 !important;
+    padding:8px;
 }
 @media only screen and (min-width: 800px) {
     /* Media Query Laptop */
@@ -207,9 +218,8 @@ a:hover{
         margin-top: -16;
         width: 100%;
     }
-    h1{
+    h1 {
         font-size: 19pt;
     }
 
 }
-
