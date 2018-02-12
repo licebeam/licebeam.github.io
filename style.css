@@ -21,9 +21,10 @@ p {
     font-size: 16;
 }
 
-.titleText{
+.titleText {
     height: 800px;
 }
+
 .titleText > h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
@@ -37,28 +38,39 @@ p {
     font-size: 12pt;
 }
 
-#about {
-    height: 400;
-}
-
-#projects {
- 
-}
-
-#contact {
-    height: 400;
-}
-
-
-ul {
-
-}
-
-.color1 { /* this is a container div */
+.color1 {
+    /* this is a container div */
     background-color: white;
     padding: 0 100 0 100;
     margin: 0 auto;
 }
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#projects {
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+footer {
+    background-color: F71735;
+    height: 100px;
+    padding: 25;
+    margin-top: -16;
+}
+
+
+
 
 .parallax-window {
     background: transparent;
@@ -67,15 +79,8 @@ ul {
 }
 
 .carousel {
-    max-height: 400px inherit;
+    max-height: auto;
     max-width: 800px;
     margin: 0 auto;
 
-}
-
-footer {
-    background-color: F71735;
-    margin-top: -20;
-    margin: 0 auto;
-    height: 100px;
 }
