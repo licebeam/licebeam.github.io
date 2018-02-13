@@ -86,10 +86,11 @@ a:hover {
     color: white;
 }
 
-.iconSkill{
+.iconSkill {
     color: F71735 !important;
-    padding:8px;
+    padding: 8px;
 }
+
 @media only screen and (min-width: 800px) {
     /* Media Query Laptop */
     body {
@@ -99,7 +100,7 @@ a:hover {
 
 
     .titleText {
-
+        padding-top:20px;
         width: 100%;
     }
 
@@ -166,6 +167,7 @@ a:hover {
 @media only screen and (min-width: 30px) and (max-width: 800px) {
     /* Media Query Mobile */
     .titleText {
+        padding-top:20px;
         width: 100%;
     }
 
