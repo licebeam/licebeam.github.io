@@ -1,64 +1,73 @@
 /* overrides */
 
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: black;
-    background-image: url(images/bg1.png);
-    background-repeat: repeat;
-
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  background-image: url(images/bg1.png);
+  background-repeat: repeat;
 }
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.item1 {
+  grid-row: 1;
+}
+.item2 {
+  grid-row: 1;
+}
+.item3 {
+  grid-row: 1;
+}
 h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    line-height: .98;
-    letter-spacing: 2pt;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: 2pt;
 }
-
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16;
-    letter-spacing: 4pt;
-    line-height: 2;
+  font-family: "Raleway", sans-serif;
+  font-size: 16;
+  letter-spacing: 4pt;
+  line-height: 2;
 }
-
-
 
 nav {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* change the background color */
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-custom {
-    background-color: F71735;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 40;
-    letter-spacing: 2pt;
+  background-color: F71735;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 40;
+  letter-spacing: 2pt;
 }
 
 /* change the brand and text color */
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* change the link color */
 
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* change the color of active or hovered links */
@@ -66,162 +75,151 @@ nav {
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link,
 .navbar-toggler {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 h1 > a {
-    padding: 8px;
-    color: black;
+  padding: 8px;
+  color: black;
 }
 
 a:link {
-    color: null;
+  color: null;
 }
 
 a:visited {
-    color: null;
+  color: null;
 }
 
 a:hover {
-    color: white;
+  color: white;
 }
 
 .iconSkill {
-    color: F71735 !important;
-    padding: 8px;
+  color: F71735 !important;
+  padding: 8px;
 }
 
 @media only screen and (min-width: 800px) {
-    /* Media Query Laptop */
-    body {
-        margin: 0 100 20 100;
-    }
+  /* Media Query Laptop */
+  body {
+    margin: 0 100 20 100;
+  }
 
+  .titleText {
+    padding-top: 20px;
+    width: 100%;
+  }
 
+  .titleText > h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-size: 60pt;
+  }
 
-    .titleText {
-        padding-top:20px;
-        width: 100%;
-    }
+  .titleText > p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 12pt;
+  }
 
-    .titleText > h1 {
-        font-family: 'Source Sans Pro', sans-serif;
-        color: white;
-        font-size: 60pt;
+  .color1 {
+    /* this is a container div */
+    background-color: white;
+    margin: 0 auto;
+    padding: 0 120 0 120;
+    width: 100%;
+  }
 
-    }
+  #about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-    .titleText > p {
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        font-size: 12pt;
-    }
+  #projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  #contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  myFormDiv {
+    padding: 10 10 10 10;
+    background-color: blue;
+  }
 
-    .color1 {
-        /* this is a container div */
-        background-color: white;
-        margin: 0 auto;
-        padding: 0 120 0 120;
-        width: 100%;
-    }
-
-
-    #about {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    #projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    #contact {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    myFormDiv {
-        padding: 10 10 10 10;
-        background-color: blue;
-    }
-
-    footer {
-        background-color: F71735;
-        height: 100px;
-        padding: 25;
-        margin-top: -16;
-        width: 100%;
-    }
-
+  footer {
+    background-color: F71735;
+    height: 100px;
+    padding: 25;
+    margin-top: -16;
+    width: 100%;
+  }
 }
 
-
-
 .carousel {
-    max-width: 800px;
-    margin: 0 auto;
-
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 30px) and (max-width: 800px) {
-    /* Media Query Mobile */
-    .titleText {
-        padding-top:20px;
-        width: 100%;
-    }
+  /* Media Query Mobile */
+  .titleText {
+    padding-top: 20px;
+    width: 100%;
+  }
 
-    .titleText > h1 {
-        font-family: 'Source Sans Pro', sans-serif;
-        color: white;
-        font-size: 60pt;
-    }
+  .titleText > h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-size: 60pt;
+  }
 
-    .titleText > p {
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        font-size: 12pt;
-    }
+  .titleText > p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 12pt;
+  }
 
-    .color1 {
-        /* this is a container div */
-        background-color: white;
-        margin: 0 auto;
-        padding: 0 0 0 0;
-    }
+  .color1 {
+    /* this is a container div */
+    background-color: white;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
 
+  #about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
 
-    #about {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
+  #projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
 
-    #projects {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
+  #contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  myFormDiv {
+    padding: 10 10 10 10;
+    background-color: blue;
+  }
 
-    #contact {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
-    myFormDiv {
-        padding: 10 10 10 10;
-        background-color: blue;
-    }
-
-    footer {
-        background-color: F71735;
-        height: 100px;
-        padding: 25;
-        margin-top: -16;
-        width: 100%;
-    }
-    h1 {
-        font-size: 19pt;
-    }
-
+  footer {
+    background-color: F71735;
+    height: 100px;
+    padding: 25;
+    margin-top: -16;
+    width: 100%;
+  }
+  h1 {
+    font-size: 19pt;
+  }
 }
