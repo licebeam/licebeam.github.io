@@ -11,10 +11,14 @@ body {
   background-image: url(images/bg1.png);
   background-repeat: repeat;
 }
+.centerer {
+  margin: 0 auto;
+  width: 80%;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
 }
 .item1 {
@@ -100,126 +104,54 @@ a:hover {
   padding: 8px;
 }
 
-@media only screen and (min-width: 800px) {
-  /* Media Query Laptop */
-  body {
-    margin: 0 100 20 100;
-  }
-
-  .titleText {
-    padding-top: 20px;
-    width: 100%;
-  }
-
-  .titleText > h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    color: white;
-    font-size: 60pt;
-  }
-
-  .titleText > p {
-    font-family: "Raleway", sans-serif;
-    color: white;
-    font-size: 12pt;
-  }
-
-  .color1 {
-    /* this is a container div */
-    background-color: white;
-    margin: 0 auto;
-    padding: 0 120 0 120;
-    width: 100%;
-  }
-
-  #about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  #projects {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  #contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  myFormDiv {
-    padding: 10 10 10 10;
-    background-color: blue;
-  }
-
-  footer {
-    background-color: F71735;
-    height: 100px;
-    padding: 25;
-    margin-top: -16;
-    width: 100%;
-  }
+body {
+  margin: 0 100 20 100;
 }
 
-.carousel {
-  max-width: 800px;
+.titleText {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.titleText > h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 60pt;
+}
+
+.titleText > p {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 12pt;
+}
+
+.color1 {
+  /* this is a container div */
+  background-color: white;
   margin: 0 auto;
+  padding: 0 120 0 120;
+  width: 100%;
 }
 
-@media only screen and (min-width: 30px) and (max-width: 800px) {
-  /* Media Query Mobile */
-  .titleText {
-    padding-top: 20px;
-    width: 100%;
-  }
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-  .titleText > h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    color: white;
-    font-size: 60pt;
-  }
+#projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-  .titleText > p {
-    font-family: "Raleway", sans-serif;
-    color: white;
-    font-size: 12pt;
-  }
+#contact {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 
-  .color1 {
-    /* this is a container div */
-    background-color: white;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-  }
-
-  #about {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-  }
-
-  #projects {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-  }
-
-  #contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-  }
-  myFormDiv {
-    padding: 10 10 10 10;
-    background-color: blue;
-  }
-
-  footer {
-    background-color: F71735;
-    height: 100px;
-    padding: 25;
-    margin-top: -16;
-    width: 100%;
-  }
-  h1 {
-    font-size: 19pt;
-  }
+footer {
+  background-color: F71735;
+  height: 100px;
+  padding: 25;
+  margin-top: 0;
+  width: 100%;
 }
