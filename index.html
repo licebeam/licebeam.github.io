@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="modules/bootstrap.min.css">
     <link rel="stylesheet" href="modules/animate.css">
     <script src="modules/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:900" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -19,62 +19,59 @@
 </head>
 
 <body>
-    <div class="wrapper container-fluid marZero text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+        <a class="navbar-brand" href="#top">
+            <i class="far fa-folder"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <div class="row">
 
-
-
-            <nav class="navbar navbar-expand-lg navbar-custom bg-color marZero">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                    aria-expanded="false" aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
-                        <i class="far fa-folder"></i>
-                    </a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT_</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">PROJECTS_</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT_</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Marks the end of the parallax-->
+    <div class="mainDiv container-fluid" id="top">
 
 
 
-            <div class="text-center titleText">
+        <div class="jumbotron jumbotron-fluid mx-auto">
+            <div class="container">
                 <h1 class="ani">//Dustin Walker</h1>
-
-                <p class="ani">Front-end web developer!</p>
+                <p>Front End Web Developer</p>
+                <p class="decal">+</p>
             </div>
+        </div>
 
 
-
-
-
-
-            <div class="color1 " id="about">
-                <h1>About Me_</h1>
-                <p> Front-End Web Developer and Designer. Currently residing in the metropolis of Tokyo. Currently finishing
-                    up my BFA in april with a focus in graphic design. I have experience with HTML Javascript and Css3, bootstrap,
-                    material-ui and React.
-                </p>
-
+        <div class="row sec1" id="about">
+            <div class="col">
+                <h1>About
+                    <span class="animated flash ani3">_</span>
+                </h1>
+                <p class="decal">+</p>
+                <p>Front-End Web Developer and Designer. Currently residing in the metropolis of Tokyo. Currently finishing
+                    up my BFA in april with a focus in graphic design. I have experience with HTML Javascript and CSS and
+                    Sass, bootstrap, material-ui, React.js and much more!</p>
                 <p> You can check out my resume here:
+                    <a href="https://docs.google.com/document/d/1A1ENjShZQ7LxHNRq_JDzKc4VRXRGkm7i2J9DvtNYSZc/edit?usp=sharing" target="_blank">Dustin Walker Resume 2018</a>
                 </p>
-                <a href="https://docs.google.com/document/d/1A1ENjShZQ7LxHNRq_JDzKc4VRXRGkm7i2J9DvtNYSZc/edit?usp=sharing" target="_blank">Dustin Walker Resume 2018</a>
-                <h1 class="">
+
+
+                <div class="skillIcons">
+                    <p>Some of the tools I enjoy using:</p>
                     <span class="iconSkill">
                         <i class="fab fa-css3-alt"></i>
                     </span>
@@ -88,159 +85,120 @@
                         <i class="fab fa-node-js"></i>
                     </span>
                     <span class="iconSkill">
-                        <i class="fas fa-code"></i>
+                        <i class="fab fa-sass"></i>
                     </span>
-                </h1>
-
-
-            </div>
-            <div class="color1" id="projects">
-
-                <h1>Projects_</h1>
-                <p> Check out some of the cool projects I've worked on.
-                </p>
-                </p>
-                <div class="centerer">
-                    <!--My portfolio Content will go here.-->
-                    <div class=" grid-container">
-                        <div class="grid-item item1">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item item2">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item item3">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class=" grid-container">
-                        <div class="grid-item item1">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item item2">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item item3">
-                            <div class=" card " style="width: 18rem; ">
-                                <img class="card-img-top " src="/images/bg1.png " alt="Card image cap ">
-                                <div class="card-body ">
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    <span class="iconSkill">
+                        <i class="fab fa-react"></i>
+                    </span>
+                    <span class="iconSkill">
+                        <i class="fab fa-git"></i>
+                    </span>
                 </div>
-
-
             </div>
 
-            <div class="color1 " id="contact">
 
-                <h1>Contact_</h1>
-                <p> If you would like to work together, feel free to contact me via the social links below. Or via email: lice1337@gmail.com
-                    Thanks!
-                </p>
+        </div>
 
+        <div id="projects" class="row sec2">
+            <div class="col">
+                <h1>Projects
+                    <span class="animated flash ani3">_</span>
+                </h1>
             </div>
 
-            <footer>
-                <h1>
-                    <a href="https://twitter.com/dwalkerart " class="ani2 ">
-                        <i class="fab fa-twitter "></i>
-                    </a>
-                    <a href="https://github.com/licebeam " class="ani2 ">
-                        <i class="fab fa-github "></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dustin-walker-70b61b91/ " class="ani2 ">
-                        <i class="fab fa-linkedin "></i>
-                    </a>
-                    <a href="https://codepen.io/licebeam/ " class="ani2 ">
-                        <i class="fab fa-codepen "></i>
-                    </a>
+        </div>
+
+        <div class="row sec22">
+            <div id="pr1">
+                <a href="">
+                    asdasd
+                </a>
+            </div>
+            <div id="pr2">
+                <a href="">a
+
+                </a>
+            </div>
+            <div id="pr3">
+                <a href="">a
+
+                </a>
+            </div>
+            <div id="pr4">
+                <a href="">a
+
+                </a>
+            </div>
+            <div id="pr5">
+                <a href="">a
+
+                </a>
+            </div>
+        </div>
+
+
+        <div id="contact" class="row sec3">
+            <div class="col">
+                <h1>Contact
+                    <span class="animated flash ani3">_</span>
                 </h1>
 
-            </footer>
+                <p> If you would like to work together, feel free to contact me via the social links below.
+                </p>
+                <p>Email:
+                    <span id="email"> lice1337@gmail.com</span> Thanks!
+                </p>
+            </div>
 
-
-            <!-- Wrap 2 div-->
-
-            <!--END OF WRAPPER-->
         </div>
+
+
+
+
     </div>
 
+    <footer>
+        <div>
+            <a href="https://twitter.com/dwalkerart" class="ani2">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/licebeam" class="ani2">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dustin-walker-70b61b91/" class="ani2">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://codepen.io/licebeam/" class="ani2">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </div>
 
 
+
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 600);
+            });
+
+            $(".ani ").addClass("animated fadeIn");
+
+            $(".ani2 ").hover(function () {
+                $(this).addClass("animated flash");
+            }, function () {
+                $(this).removeClass("animated flash");
+            });
+        });
+    </script>
 </body>
 
-<!-- JQuery ahoy!-->
-<script>
-    $(document).ready(function () {
-        $(".ani ").addClass("animated fadeIn ");
-
-        $(".ani2 ").hover(function () {
-            $(this).addClass("animated flash ");
-        }, function () {
-            $(this).removeClass("animated flash ");
-        });
-
-        $(document).on('click', 'a[href^="# "]', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
-        });
-
-
-        //testing a parallax by dave rupert
-        const title = document.querySelector('h1');
-        const speed = 0.1;
-
-        title.style.transform = 'translateY( calc( var(--scrollparallax) * 1px ) )';
-
-        window.addEventListener('scroll', function () {
-            title.style.setProperty('--scrollparallax', (document.body.scrollTop || document.documentElement.scrollTop) * speed);
-        });
-    });
-
-</script>
 
 
 </html>
