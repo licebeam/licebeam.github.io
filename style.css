@@ -102,6 +102,8 @@ footer a {
 }
 
 .sec22 {
+  margin: 0 auto;
+  padding: 0;
   background-color: orange;
   color: #f4f7fc;
 }
