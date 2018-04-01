@@ -96,8 +96,6 @@ footer {
   background-color: $cSection2;
 }
 .sec22 {
-  height: 600px;
-  width: 100%;
   background-color: $cSection2;
   color: $cFont;
 }
@@ -194,8 +192,9 @@ a:hover {
 #pr8,
 #pr9,
 #pr10 {
-  margin-top: -30;
-  height: 100px;
+  background-color: white;
+  width: 100%;
+  color: black;
   width: 20%;
   p {
     font-size: 2vh;
