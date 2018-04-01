@@ -104,7 +104,8 @@ footer a {
 .sec22 {
   height: 600px;
   width: 100%;
-  background-color: #ea1c31;
+  background-color: orange;
+  color: #f4f7fc;
 }
 
 .sec3 {
@@ -157,29 +158,72 @@ a:hover {
   background-color: turquoise;
   width: 20%;
   height: 400px;
+  overflow: hidden;
+}
+
+#pr1 img {
+  margin-left: -100;
 }
 
 #pr2 {
   background-color: green;
   width: 20%;
   height: 400px;
+  overflow: hidden;
+}
+
+#pr2 img {
+  margin-left: -320;
 }
 
 #pr3 {
   background-color: red;
   width: 20%;
   height: 400px;
+  overflow: hidden;
+}
+
+#pr3 img {
+  margin-left: -100;
 }
 
 #pr4 {
   background-color: orange;
   width: 20%;
   height: 400px;
+  overflow: hidden;
+}
+
+#pr4 img {
+  margin-left: -100;
 }
 
 #pr5 {
   background-color: black;
   width: 20%;
   height: 400px;
+  overflow: hidden;
+}
+
+#pr5 img {
+  margin-left: -400;
+}
+
+#pr6,
+#pr7,
+#pr8,
+#pr9,
+#pr10 {
+  margin-top: -30;
+  height: 100px;
+  width: 20%;
+}
+
+#pr6 p,
+#pr7 p,
+#pr8 p,
+#pr9 p,
+#pr10 p {
+  font-size: 2vh;
 }
 /*# sourceMappingURL=style.css.map */
