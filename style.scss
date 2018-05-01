@@ -1,6 +1,6 @@
 $cMain: white;
 $cSection1: #ea1c31;
-$cSection2: orange;
+$cSection2: black;
 $cSection3: #50b0a6;
 $cFoot: #1c1d21;
 $cFont: #f4f7fc;
@@ -122,7 +122,8 @@ p {
   font-size: 3vh;
 }
 #email {
-  color: orangered;
+  font-family: $hFont;
+  color: white;
 }
 
 a:link {
@@ -172,7 +173,7 @@ a:hover {
   }
 }
 #pr4 {
-  background-color: orange;
+  background-color: black;
   width: 20%;
   height: 400px;
   overflow: hidden;
@@ -194,9 +195,9 @@ a:hover {
 #pr8,
 #pr9,
 #pr10 {
-  background-color: white;
+  background-color: black;
   width: 100%;
-  color: black;
+  color: white;
   width: 20%;
   p {
     font-size: 2vh;
