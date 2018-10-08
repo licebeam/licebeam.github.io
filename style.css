@@ -106,6 +106,8 @@ footer a {
   padding: 0;
   background-color: black;
   color: #f4f7fc;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec3 {
@@ -157,57 +159,57 @@ a:hover {
 
 #pr1 {
   background-color: turquoise;
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
   overflow: hidden;
 }
 
 #pr1 img {
-  margin-left: -100;
+ width: 100%;
 }
 
 #pr2 {
   background-color: green;
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
   overflow: hidden;
 }
 
 #pr2 img {
-  margin-left: -320;
+ width: 100%;
 }
 
 #pr3 {
   background-color: red;
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
   overflow: hidden;
 }
 
 #pr3 img {
-  margin-left: -100;
+  width: 100%;
 }
 
 #pr4 {
   background-color: black;
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
   overflow: hidden;
 }
 
 #pr4 img {
-  margin-left: -100;
+  width: 100%;
 }
 
 #pr5 {
   background-color: black;
-  width: 20%;
-  height: 400px;
+  width: 100%;
+  max-height: 400px;
   overflow: hidden;
 }
 
 #pr5 img {
-  margin-left: -400;
+  width: 100%;
 }
 
 #pr6,
@@ -218,7 +220,7 @@ a:hover {
   background-color: black;
   width: 100%;
   color: white;
-  width: 20%;
+  width: 100%;
 }
 
 #pr6 p,
