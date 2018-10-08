@@ -86,7 +86,7 @@ footer a {
   padding: 0 10 10 0;
   color: #f4f7fc;
   margin: 0 auto;
-  font-size: 4vh;
+  font-size: 2rem;
 }
 
 .sec1 {
@@ -94,8 +94,16 @@ footer a {
   height: 800px;
   background-color: #ea1c31;
   color: white;
+  
 }
-
+#resume {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-size: 1.4rem;
+}
+#resume:hover{
+  color: white;
+}
 .sec2 {
   height: 200px;
   background-color: black;
@@ -156,6 +164,7 @@ a:hover {
   font-size: 10vh;
   float: right;
 }
+
 
 #pr1 {
   background-color: turquoise;
